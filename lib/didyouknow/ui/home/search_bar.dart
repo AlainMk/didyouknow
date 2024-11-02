@@ -15,7 +15,7 @@ class HomeSearchBar extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(KnowunitySpacing.medium),
       decoration: BoxDecoration(
-        color: KnowunityColors.lightGray.withOpacity(0.1),
+        color: KnowunityColors.primary.withOpacity(0.1),
         borderRadius: BorderRadius.circular(KnowunityBorderRadius.huge),
       ),
       child: Container(

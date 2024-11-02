@@ -1,0 +1,117 @@
+{
+  "1": {
+    "id": "1",
+    "title": "Continents of the World",
+    "factSnippet": "There are seven continents in the world, not five!",
+    "imageUrl": "https://example.com/images/continents.jpg",
+    "type": "slide",
+    "slides": [
+      {
+        "title": "Introduction to Continents",
+        "imageUrl": "https://example.com/images/continents_intro.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum venenatis est ut justo dictum, non tempus eros consequat.\n\nCurabitur convallis erat in urna ultrices, ut cursus lorem ultricies.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+      },
+      {
+        "title": "Asia",
+        "imageUrl": "https://example.com/images/asia.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis nisi nec sapien varius, ut pulvinar nisi malesuada.\n\nDuis vel nibh ut libero accumsan lacinia.\n\nDonec ut metus ullamcorper, accumsan ex ac, tempus est."
+      },
+      {
+        "title": "Africa",
+        "imageUrl": "https://example.com/images/africa.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat erat et nisi vehicula, sed tempus metus consectetur.\n\nPhasellus tincidunt lectus id erat condimentum bibendum.\n\nVivamus convallis metus in nisi sodales, ut auctor mi pulvinar."
+      },
+      {
+          "title": "Europe",
+          "imageUrl": "https://example.com/images/europe.jpg",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec libero nec nulla ultricies tincidunt.\n\nSed nec libero nec nulla ultricies tincidunt.\n\nSed nec libero nec nulla ultricies tincidunt."
+      },
+      {
+          "title": "North America",
+          "imageUrl": "https://example.com/images/north_america.jpg",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec libero nec nulla ultricies tincidunt.\n\nSed nec libero nec nulla ultricies tincidunt.\n\nSed nec libero nec nulla ultricies tincidunt."
+      },
+      {
+          "title": "South America",
+          "imageUrl": "https://example.com/images/south_america.jpg",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec libero nec nulla ultricies tincidunt.\n\nSed nec libero nec nulla ultricies tincidunt.\n\nSed nec libero nec nulla ultricies tincidunt."
+      },
+      {
+          "title": "Australia",
+          "imageUrl": "https://example.com/images/australia.jpg",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec libero nec nulla ultricies tincidunt.\n\nSed nec libero nec nulla ultricies tincidunt.\n\nSed nec libero nec nulla ultricies tincidunt."
+      },
+      {
+          "title": "Antarctica",
+          "imageUrl": "https://example.com/images/antarctica.jpg",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec libero nec nulla ultricies tincidunt.\n\nSed nec libero nec nulla ultricies tincidunt.\n\nSed nec libero nec nulla ultricies tincidunt."
+      }
+    ]
+  },
+  "2": {
+    "id": "2",
+    "title": "Pythagorean Theorem",
+    "factSnippet": "The Pythagorean theorem relates the sides of a right triangle.",
+    "imageUrl": "https://example.com/images/pythagoras.jpg",
+    "type": "article",
+    "slides": [
+      {
+        "title": "Understanding the Pythagorean Theorem",
+        "imageUrl": "https://example.com/images/pythagoras_theorem.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.\n\nIn condimentum facilisis porta. Praesent bibendum nulla ac diam.\n\nMorbi sit amet mauris sed velit venenatis tincidunt."
+      }
+    ]
+  },
+  "3": {
+    "id": "3",
+    "title": "Newton's Laws of Motion",
+    "factSnippet": "Isaac Newton’s three laws of motion explain how objects move.",
+    "imageUrl": "https://example.com/images/newton.jpg",
+    "type": "video",
+    "slides": [
+      {
+        "title": "Introduction to Newton's Laws",
+        "videoUrl": "https://example.com/videos/newton_laws.mp4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet orci non ligula fermentum tincidunt.\n\nProin at risus non urna gravida eleifend at et urna.\n\nAliquam erat volutpat. Duis blandit orci ac ante ultrices tincidunt."
+      }
+    ]
+  },
+  "4": {
+    "id": "4",
+    "title": "The Great Wall of China",
+    "factSnippet": "The Great Wall of China is one of the Seven Wonders of the World.",
+    "imageUrl": "https://example.com/images/great_wall.jpg",
+    "type": "article",
+    "slides": [
+      {
+        "title": "History of the Great Wall",
+        "imageUrl": "https://example.com/images/great_wall_history.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla dui et felis euismod ullamcorper.\n\nMorbi placerat leo a urna facilisis luctus.\n\nPraesent tincidunt velit a risus malesuada, nec gravida mauris accumsan."
+      }
+    ]
+  },
+  "5": {
+    "id": "5",
+    "title": "The Solar System",
+    "factSnippet": "Our solar system has eight planets orbiting the sun.",
+    "imageUrl": "https://example.com/images/solar_system.jpg",
+    "type": "slide",
+    "slides": [
+      {
+        "title": "Introduction to the Solar System",
+        "imageUrl": "https://example.com/images/solar_system_intro.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Proin nec eros eget ex ultrices consectetur.\n\nInteger sit amet risus ut odio consequat fermentum.\n\nSed fermentum ligula et dolor ultrices, a tempor orci varius."
+      },
+      {
+        "title": "The Inner Planets",
+        "imageUrl": "https://example.com/images/inner_planets.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.\n\nUt euismod urna vel felis ultricies aliquet."
+      },
+      {
+        "title": "The Outer Planets",
+        "imageUrl": "https://example.com/images/outer_planets.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec nisi ac orci vehicula commodo.\n\nCras ac est id lacus pharetra pharetra.\n\nNunc faucibus dolor ac magna facilisis, in sodales nulla efficitur."
+      }
+    ]
+  }
+}

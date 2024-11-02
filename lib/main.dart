@@ -1,9 +1,11 @@
 import 'package:didyouknow/didyouknow/ui/home/home_screen.dart';
+import 'package:didyouknow/shared/di.dart';
 import 'package:didyouknow/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  DependencyInjector.inject();
   runApp(const MyApp());
 }
 

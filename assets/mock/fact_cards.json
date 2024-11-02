@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "title": "Continents of the World",
+    "factSnippet": "There are seven continents in the world, not five!",
+    "imageUrl": "https://example.com/images/continents.jpg",
+    "type": "slide"
+  },
+  {
+    "id": "2",
+    "title": "Pythagorean Theorem",
+    "factSnippet": "The Pythagorean theorem relates the sides of a right triangle.",
+    "imageUrl": "https://example.com/images/pythagoras.jpg",
+    "type": "article"
+  },
+  {
+    "id": "3",
+    "title": "Newton's Laws of Motion",
+    "factSnippet": "Isaac Newton’s three laws of motion explain how objects move.",
+    "imageUrl": "https://example.com/images/newton.jpg",
+    "type": "video"
+  },
+  {
+    "id": "4",
+    "title": "The Great Wall of China",
+    "factSnippet": "The Great Wall of China is one of the Seven Wonders of the World.",
+    "imageUrl": "https://example.com/images/great_wall.jpg",
+    "type": "article"
+  },
+  {
+    "id": "5",
+    "title": "The Solar System",
+    "factSnippet": "Our solar system has eight planets orbiting the sun.",
+    "imageUrl": "https://example.com/images/solar_system.jpg",
+    "type": "slide"
+  }
+]

@@ -4,6 +4,7 @@ class KnowunityColors {
   const KnowunityColors._();
   static const primary = Color(0xFF3893F5);
   static const secondary = Color(0xFFFE6C4B);
+  static const Color third = Color(0xFF2E6494);
 
   static const Color grey = Color(0xFF3A5160);
   static const Color darkGrey = Color(0xFF313A44);
@@ -13,7 +14,7 @@ class KnowunityColors {
 
   static const lightGray = Color(0xFF9B9EA5);
   static const border = Color(0xFFE2E8F0);
-  static const background = Color(0xFFF4F7F9);
+  static const background = Color(0xFF2F1568);
 
   static const red = Color(0xFFEE4B2E);
 
