@@ -1,3 +1,5 @@
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:didyouknow/didyouknow/ui/details/bloc/details_fact_bloc.dart';
 import 'package:didyouknow/theme/border_radius.dart';
 import 'package:didyouknow/theme/colors.dart';
 import 'package:didyouknow/theme/spacing.dart';
@@ -6,7 +8,9 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class SlidesFact extends StatefulWidget {
-  const SlidesFact({super.key});
+  const SlidesFact({super.key, required this.items});
+
+  final List<SlideItem> items;
 
   @override
   State<SlidesFact> createState() => _SlidesFactState();
@@ -29,36 +33,39 @@ class _SlidesFactState extends State<SlidesFact> {
   }
 
   void _goToNextPage() {
-    if (_currentPage < 5 - 1) {
+    if (_currentPage < widget.items.length - 1) {
       _pageController.nextPage(
         duration: const Duration(milliseconds: 300),
         curve: Curves.easeInOut,
       );
+    } else {
+      Navigator.of(context).pop();
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    final items = widget.items;
     return SafeArea(
       child: Column(
         children: [
           LinearProgressIndicator(
-            value: (_currentPage + 1) / 5,
+            value: (_currentPage + 1) / items.length,
             backgroundColor: KnowunityColors.white.withOpacity(0.5),
             valueColor: const AlwaysStoppedAnimation<Color>(KnowunityColors.white),
           ),
           Expanded(
             child: PageView.builder(
               controller: _pageController,
-              itemCount: 5,
+              itemCount: items.length,
               onPageChanged: (index) {
                 setState(() {
                   _currentPage = index;
                 });
               },
               itemBuilder: (context, index) {
-                //final slide = widget.details.slides[index];
-                return _buildSlideContent();
+                final item = widget.items[index];
+                return _buildSlideContent(item);
               },
             ),
           ),
@@ -70,7 +77,7 @@ class _SlidesFactState extends State<SlidesFact> {
               color: KnowunityColors.white,
               borderRadius: BorderRadius.circular(KnowunityBorderRadius.huge),
               child: Text(
-                _currentPage < 5 - 1 ? 'Next' : 'Finish',
+                _currentPage < items.length - 1 ? 'Next' : 'Finish',
                 style: Theme.of(context).textTheme.titleSmall!.copyWith(color: KnowunityColors.background),
               ),
             ),
@@ -80,35 +87,33 @@ class _SlidesFactState extends State<SlidesFact> {
     );
   }
 
-  Widget _buildSlideContent() {
+  Widget _buildSlideContent(SlideItem item) {
     return SingleChildScrollView(
       padding: const EdgeInsets.all(KnowunitySpacing.large),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Gap(KnowunitySpacing.small),
-          Text(
-            "Did you know?",
-            style: const TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              color: KnowunityColors.white,
-            ),
-            textAlign: TextAlign.center,
-          ),
-          const Gap(KnowunitySpacing.large),
+          const Gap(KnowunitySpacing.small),
           Container(
             width: double.infinity,
             height: 200,
-            child: Image.network(
-              "https://picsum.photos/seed/200/300",
-              fit: BoxFit.cover,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(KnowunityBorderRadius.big),
+              image: DecorationImage(
+                image: CachedNetworkImageProvider(item.slideImageUrl),
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           const Gap(KnowunitySpacing.large),
           Text(
-            "The first computer virus was created in 1983 and was called the Elk Cloner.",
-            style: const TextStyle(fontSize: 16, color: KnowunityColors.white),
+            item.slideTitle,
+            style: Theme.of(context).textTheme.titleLarge!.copyWith(color: KnowunityColors.white),
+          ),
+          const Gap(KnowunitySpacing.large),
+          Text(
+            item.slideDescription,
+            style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: KnowunityColors.white),
           ),
         ],
       ),

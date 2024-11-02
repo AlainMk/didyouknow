@@ -65,7 +65,7 @@ class HomeFactCard extends StatelessWidget {
               const Spacer(),
               CupertinoButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => FactDetailsScreen(id: "")));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => FactDetailsScreen(id: state.fact.id)));
                 },
                 color: KnowunityColors.primary,
                 padding: const EdgeInsets.symmetric(vertical: KnowunitySpacing.medium, horizontal: KnowunitySpacing.large),
