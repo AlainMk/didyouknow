@@ -19,6 +19,7 @@ class KnowunityTheme {
         backgroundColor: KnowunityColors.white,
         elevation: 0,
         foregroundColor: KnowunityColors.darkerText,
+        iconTheme: IconThemeData(color: KnowunityColors.darkText),
       ),
       scaffoldBackgroundColor: KnowunityColors.white,
       textTheme: KnowunityFonts.textTheme,

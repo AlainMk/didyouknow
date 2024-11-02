@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flaconi Weather',
+      title: 'Did You Know?',
       theme: KnowunityTheme.light(),
       debugShowCheckedModeBanner: false,
       home: const HomeScreen(),
