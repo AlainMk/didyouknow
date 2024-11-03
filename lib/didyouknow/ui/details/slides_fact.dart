@@ -96,7 +96,7 @@ class _SlidesFactState extends State<SlidesFact> {
           const Gap(KnowunitySpacing.small),
           Container(
             width: double.infinity,
-            height: 200,
+            height: 220,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(KnowunityBorderRadius.big),
               image: DecorationImage(

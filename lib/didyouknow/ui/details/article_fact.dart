@@ -49,6 +49,7 @@ class ArticleFact extends StatelessWidget {
               ),
             ),
           ),
+          const Gap(KnowunitySpacing.large),
           Container(
             margin: const EdgeInsets.symmetric(horizontal: KnowunitySpacing.large),
             width: double.infinity,

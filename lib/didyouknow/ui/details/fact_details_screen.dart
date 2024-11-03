@@ -23,7 +23,12 @@ class FactDetailsScreen extends StatelessWidget {
           backgroundColor: Colors.transparent,
           foregroundColor: KnowunityColors.white,
           iconTheme: const IconThemeData(color: KnowunityColors.white),
+          centerTitle: true,
           actions: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(CupertinoIcons.heart),
+            ),
             IconButton(
               onPressed: () {},
               icon: const Icon(CupertinoIcons.share),

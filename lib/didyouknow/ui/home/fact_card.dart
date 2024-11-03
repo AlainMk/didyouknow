@@ -44,7 +44,7 @@ class HomeFactCard extends StatelessWidget {
           const Gap(KnowunitySpacing.largeL),
           Expanded(
             child: Container(
-              margin: const EdgeInsets.symmetric(horizontal: KnowunitySpacing.large),
+              margin: const EdgeInsets.symmetric(horizontal: KnowunitySpacing.normal),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(KnowunityBorderRadius.big),
                 image: DecorationImage(
