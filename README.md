@@ -1,16 +1,25 @@
-# didyouknow
+# Did You Know? - Case Study Feature
 
-A Case Study Flutter project.
+This repository contains a Proof of Concept for the **"Did you know?"** feature, developed to boost user retention through daily educational content.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Daily Fact Card**: Displays a fact snippet on the home screen.
+- **Learn More**: Expands to show content in article, video, or slide format.
+- **Like & Share**: Users can engage with and share content.
+- **Progress Tracking**: Navigate slides with a progress indicator.
 
-A few resources to get you started if this is your first Flutter project:
+## Setup
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone and navigate to the project.
+   ```bash
+   git clone https://github.com/AlainMk/didyouknow.git
+   cd didyouknow
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Install dependencies.
+   ```bash
+   flutter pub get
+
+3. Run the app.
+   ```bash
+   flutter run
