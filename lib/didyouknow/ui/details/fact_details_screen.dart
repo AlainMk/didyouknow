@@ -2,6 +2,7 @@ import 'package:didyouknow/didyouknow/data/models/fact.dart';
 import 'package:didyouknow/didyouknow/ui/details/article_fact.dart';
 import 'package:didyouknow/didyouknow/ui/details/bloc/details_fact_bloc.dart';
 import 'package:didyouknow/didyouknow/ui/details/slides_fact.dart';
+import 'package:didyouknow/didyouknow/ui/details/video_fact.dart';
 import 'package:didyouknow/theme/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -61,6 +62,8 @@ class FactDetailsScreen extends StatelessWidget {
                   final details = state as SuccessDetailsFactState;
                   if (details.factType == ContentType.article) {
                     return ArticleFact(item: details.slideItems.first);
+                  } else if (details.factType == ContentType.video) {
+                    return VideoFact(item: details.slideItems.first);
                   }
                   return SlidesFact(items: details.slideItems);
                 },

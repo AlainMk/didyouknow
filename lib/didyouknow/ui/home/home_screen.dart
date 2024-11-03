@@ -16,34 +16,38 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => HomeBloc()..add(const GetTodayFact()),
-      child: Scaffold(
-        appBar: AppBar(
-          title: Row(
-            children: [
-              const Icon(Icons.school),
-              const Gap(KnowunitySpacing.smallMedium),
-              const Text('Knowunity'),
-              const Spacer(),
-              const Icon(
-                Icons.local_fire_department,
-                color: KnowunityColors.lightGray,
-              ),
-              const Gap(KnowunitySpacing.smallMedium),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(CupertinoIcons.chat_bubble_2_fill),
-              ),
-              const Gap(KnowunitySpacing.smallMedium),
-              const CircleAvatar(
-                radius: 14,
-                child: Icon(Icons.person, size: 20),
-              ),
-            ],
+      child: Builder(builder: (context) {
+        return Scaffold(
+          appBar: AppBar(
+            title: Row(
+              children: [
+                const Icon(Icons.school),
+                const Gap(KnowunitySpacing.smallMedium),
+                const Text('Knowunity'),
+                const Spacer(),
+                const Icon(
+                  Icons.local_fire_department,
+                  color: KnowunityColors.lightGray,
+                ),
+                const Gap(KnowunitySpacing.smallMedium),
+                IconButton(
+                  onPressed: () {
+                    /// WARNING: this is only in purpose of testing as I want to regenerate different types of facts to show how
+                    /// they behave in details screen
+                    context.read<HomeBloc>().add(const GetTodayFact());
+                  },
+                  icon: const Icon(CupertinoIcons.chat_bubble_2_fill),
+                ),
+                const Gap(KnowunitySpacing.smallMedium),
+                const CircleAvatar(
+                  radius: 14,
+                  child: Icon(Icons.person, size: 20),
+                ),
+              ],
+            ),
           ),
-        ),
-        bottomNavigationBar: const KnowunityBottomNavigationBar(),
-        body: Builder(builder: (context) {
-          return BlocBuilder<HomeBloc, HomeState>(
+          bottomNavigationBar: const KnowunityBottomNavigationBar(),
+          body: BlocBuilder<HomeBloc, HomeState>(
             builder: (context, state) {
               if (state is LoadingHomeState) {
                 return const Center(child: CircularProgressIndicator());
@@ -91,9 +95,9 @@ class HomeScreen extends StatelessWidget {
                 ),
               );
             },
-          );
-        }),
-      ),
+          ),
+        );
+      }),
     );
   }
 }

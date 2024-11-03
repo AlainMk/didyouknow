@@ -58,4 +58,8 @@ class SlideItem {
     final random = Random();
     return "https://picsum.photos/seed/${random.nextInt(100) + 300}/${random.nextInt(100) + 300}";
   }
+
+  String get slideVideoUrl {
+    return "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4";
+  }
 }
